@@ -1,130 +1,138 @@
 using UnityEngine;
-
-public class BaseChessGameplay : MonoBehaviour
+using MainClasses;
+namespace Gameplay
 {
-    enum whoPlays {Black, White}
-    private whoPlays Player;
-    private Vector3 moveDir;
-    private Controls chessControls;
-    private Controls.ChessActions chessActions;
-    private GameObject chessBoard;
-    private ChessPieces lastPieceSelected;
-    private bool QuitSelection; 
-    private bool smthWasPressed;
-    private bool movingPiece;
-    
-    void Awake()
+    public class BaseChessGameplay : MonoBehaviour
     {
-        chessControls = new Controls();
-        chessActions = chessControls.Chess;
-    }
-    void OnDestroy()
-    {
-        chessControls.Dispose();                         
-    }
-    void OnEnable()
-    {
-        chessActions.Enable();                               
-    }
-    void OnDisable()
-    {
-        chessActions.Disable();                         
-    }
-    private void Start()
-    {        
-        chessBoard = GameObject.Find("ChessBoard");
-        Player = whoPlays.White;
-        ResetHighlightPos();
-    }
-    private void Update()
-    {
-        HandleChoosingInput();
-        HighlightPieceSelection();
-        RotateChessBoard();
-    }
-    
-    Vector3 RoundDir(Vector3 dir)
-    {
-        if(Player == whoPlays.White) return -dir;
-        else return dir;
-    }
-    private void ResetHighlightPos()
-    {
-        QuitSelection = true;
-        if (lastPieceSelected != null)
-            lastPieceSelected.transform.GetChild(0).gameObject.SetActive(false);
-        if (Player == whoPlays.Black)
-            transform.localPosition = new Vector3(3.75f, 0, 0);
-        else
-            transform.localPosition = new Vector3(3.75f, 0, 8.75f);
-    }
-    private void HandleChoosingInput()
-    {
-        if (chessActions.MoveRight.WasPressedThisFrame())
-        {
-            moveDir = RoundDir(transform.right);
-            smthWasPressed = true;
-        }
-        if (chessActions.MoveLeft.WasPressedThisFrame())
-        {
-            moveDir = RoundDir(-transform.right);
-            smthWasPressed = true;
-        }
-        if (chessActions.MoveForward.WasPressedThisFrame())
-        {
-            moveDir = RoundDir(transform.forward);
-            smthWasPressed = true;
-        }
-        if (chessActions.MoveBackward.WasPressedThisFrame())
-        {
-            moveDir = RoundDir(-transform.forward);
-            smthWasPressed = true;
-        }
-        if (chessActions.Exit.WasPressedThisFrame() || QuitSelection)
-        {
-            movingPiece = false;
-            if (lastPieceSelected != null)
-                lastPieceSelected.isControllable = false;
-        }
-        if (chessActions.Choose.WasPressedThisFrame())
-        {
-            lastPieceSelected.isControllable = true;
-            movingPiece = true;
-            QuitSelection = false;
-        }
-    }
-    public void HasPlayed(ChessPieces.PieceColor whatMoved)
-    {
-        Player = whatMoved == ChessPieces.PieceColor.White ? whoPlays.Black : whoPlays.White;
-        ResetHighlightPos();
-    }
-    private void RotateChessBoard()
-    {
-        Quaternion target = Player == whoPlays.White ? Quaternion.Euler(0, 180, 0) : Quaternion.Euler(0, 0, 0);
-        chessBoard.transform.rotation = Quaternion.RotateTowards(chessBoard.transform.rotation, target, 100 * Time.deltaTime);
-    }
-    private void HighlightPieceSelection()
-    {
-        LayerMask chessMask = Player == whoPlays.White ? 
-        LayerMask.GetMask("WhiteChess"): LayerMask.GetMask("BlackChess");
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, moveDir, out hit, 1.25f * 9, chessMask ))
-        {
-            if (movingPiece) return;
-            ChessPieces piece = hit.collider.gameObject.GetComponent<ChessPieces>();
-            if (piece != null && smthWasPressed)
-            {
-                if (lastPieceSelected != null)
-                {
-                    lastPieceSelected.transform.GetChild(0).gameObject.SetActive(false);
-                }
-                piece.transform.GetChild(0).gameObject.SetActive(true);
-                transform.localPosition = piece.transform.localPosition;
-                lastPieceSelected = piece;
+        enum WhoPlays {Black,White}
+        private WhoPlays _player;
+        private Vector3 _moveDir;
+        private Controls _chessControls;
+        private Controls.ChessActions _chessActions;
+        private GameObject _chessBoard;
+        private ChessPieces _lastPieceSelected;
+        private bool _quitSelection;
+        private bool _smthWasPressed;
+        private bool _movingPiece;
 
-                smthWasPressed = false;
+        void Awake()
+        {
+            _chessControls = new Controls();
+            _chessActions = _chessControls.Chess;
+        }
+        void OnDestroy()
+        {
+            _chessControls.Dispose();
+        }
+        void OnEnable()
+        {
+            _chessActions.Enable();
+        }
+        void OnDisable()
+        {
+            _chessActions.Disable();
+        }
+        void Start()
+        {
+            _chessBoard = GameObject.Find("ChessBoard");
+            _player = WhoPlays.White;
+            ResetHighlightPos();
+        }
+        void Update()
+        {
+            HandleChoosingInput();
+            HighlightPieceSelection();
+            RotateChessBoard();
+        }
+        
+        private Vector3 RoundDir(Vector3 dir)
+        {
+            if (_player == WhoPlays.White) return -dir;
+            else return dir;
+        }
+        private void ResetHighlightPos()
+        {
+            _quitSelection = true;
+            if (_lastPieceSelected != null)
+                _lastPieceSelected.transform.GetChild(0).gameObject.SetActive(false);
+
+            transform.localPosition =
+                _player == WhoPlays.Black ? new Vector3(3.75f, 0, 0) : new Vector3(3.75f, 0, 8.75f);
+        }
+        private void HandleChoosingInput()
+        {
+            if (_chessActions.MoveRight.WasPressedThisFrame())
+            {
+                _moveDir = RoundDir(transform.right);
+                _smthWasPressed = true;
+            }
+
+            if (_chessActions.MoveLeft.WasPressedThisFrame())
+            {
+                _moveDir = RoundDir(-transform.right);
+                _smthWasPressed = true;
+            }
+
+            if (_chessActions.MoveForward.WasPressedThisFrame())
+            {
+                _moveDir = RoundDir(transform.forward);
+                _smthWasPressed = true;
+            }
+
+            if (_chessActions.MoveBackward.WasPressedThisFrame())
+            {
+                _moveDir = RoundDir(-transform.forward);
+                _smthWasPressed = true;
+            }
+
+            if (_chessActions.Exit.WasPressedThisFrame() || _quitSelection)
+            {
+                _movingPiece = false;
+                if (_lastPieceSelected != null)
+                    _lastPieceSelected.isControllable = false;
+            }
+
+            if (_chessActions.Choose.WasPressedThisFrame())
+            {
+                _lastPieceSelected.isControllable = true;
+                _movingPiece = true;
+                _quitSelection = false;
+            }
+        }
+        public void HasPlayed(ChessPieces.PieceColor whatMoved)
+        {
+            _player = whatMoved == ChessPieces.PieceColor.White ? WhoPlays.Black : WhoPlays.White;
+            ResetHighlightPos();
+        }
+        private void RotateChessBoard()
+        {
+            Quaternion target = _player == WhoPlays.White ? Quaternion.Euler(0, 180, 0) : Quaternion.Euler(0, 0, 0);
+            _chessBoard.transform.rotation =
+                Quaternion.RotateTowards(_chessBoard.transform.rotation, target, 100 * Time.deltaTime);
+        }
+        private void HighlightPieceSelection()
+        {
+            LayerMask chessMask = _player == WhoPlays.White
+                ? LayerMask.GetMask("WhiteChess")
+                : LayerMask.GetMask("BlackChess");
+            if (Physics.Raycast(transform.position, _moveDir, out RaycastHit hit, 1.25f * 9, chessMask))
+            {
+                if (_movingPiece) return;
+                ChessPieces piece = hit.collider.gameObject.GetComponent<ChessPieces>();
+                if (piece != null && _smthWasPressed)
+                {
+                    if (_lastPieceSelected != null)
+                    {
+                        _lastPieceSelected.transform.GetChild(0).gameObject.SetActive(false);
+                    }
+
+                    piece.transform.GetChild(0).gameObject.SetActive(true);
+                    transform.localPosition = piece.transform.localPosition;
+                    _lastPieceSelected = piece;
+
+                    _smthWasPressed = false;
+                }
             }
         }
     }
-
 }
