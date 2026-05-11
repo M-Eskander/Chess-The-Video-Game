@@ -1248,56 +1248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: daf3974a-0236-4c67-a93d-0390f1f52d31
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 924f9e63-3a15-45ab-acc4-26016ee6148a
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: def1dd2b-b5d5-4d40-ad6e-2f80a4bb2782
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c1a1ad0c-bf15-4adf-804e-d823094c8917
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e93fb5d9-0e56-43d9-a95d-18dafa181d80
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &661606213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1331,96 +1283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 93e3b445-c02c-4377-9516-542afbacb800
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: d622b5c4-4601-42b5-8f16-5714c40aa39c
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e39655bf-d15f-4318-8b2c-44611b9d4c07
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 4684131c-bc37-4329-957a-f3bfa01d8e35
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 6ed69f62-6b9d-417a-837c-32b88b3c9a2e
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!1001 &673006270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1627,56 +1491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: cb20a2aa-af85-4f78-9435-fca4f64995ef
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e3ef0c76-5dac-41d9-b079-9996a9fd0363
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 5dc5de65-b38a-4e33-80eb-50811142c54f
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 920f7371-e2a7-4c33-a4af-f3b11d9cf400
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: b6c53361-52df-4971-a4be-2aec13ce26cc
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &686708155
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1710,96 +1526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: cb72bfb9-cf02-42ff-8d1d-8e14df585749
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 99b765ad-2c45-4dae-abd0-4295c2987cab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: b69c9ca0-8318-4868-b048-143dce894bf5
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 992b8388-9825-47ce-bb4f-c4af13828c6a
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 5a325db5-6924-4d0d-baed-94212c785a2d
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!1001 &694100991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1878,56 +1606,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 95ae88bc-e764-4e2c-9e59-5b091397b1c4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 1fe54d1b-7adf-43c6-81dc-b6b992852344
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7d278099-b57f-47db-bd22-ced754963df9
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: fc7c23c4-9fb5-4037-addd-b8eb656af87a
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 40d1fc67-26f2-4c4d-a884-2edf72ae90c4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &746029538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2399,56 +2079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ee0bdcfe-8ce4-4200-a86b-7d2f89dd6bac
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: f6c7501a-9965-4f2e-af02-80bfdf9cffbb
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: de14c04f-6db4-4983-977a-aff1137a5ecc
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 65e407ac-1b2e-4175-ba5d-d51078699d31
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 91a9d8b2-cb7d-4fa2-8929-429f56bd8af0
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!65 &827040585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2745,88 +2377,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd1eb59550c62fcc3a90596d9c2945b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Knights
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 67fe7373-8820-4288-9e44-387f2619e2e6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 73e9eb66-81eb-4fa1-8c4d-a491f57b8000
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 8faa62ee-4c04-42dc-abaa-794d96c71445
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 65d10e46-02b9-46bb-9f2b-3afc8881b48a
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c7a5c2a9-99a2-4947-9342-b2da3aae2eff
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: be4d4b23-5351-4dbe-b107-2845860faaf1
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 6dc0bcdb-e55c-4a64-b0a5-1bd363dc3cf8
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 17d80a04-d832-4329-bea5-55d8d956cd08
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0777c068-5221-4dbd-9c33-fb7ca9d4859a
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!4 &885522664 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
@@ -3035,56 +2587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 81f35cc3-34f3-409c-878b-5d9b936b07da
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 188de805-8632-4d6a-8374-aa5398dfbd73
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c2919025-b3de-4084-9749-4b9811f3ab59
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c4d3cb8a-ed2f-43a0-b38f-a385d1d5eba9
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 9e9603b9-193e-42ae-b972-626401e9a652
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!65 &1022113189
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3390,56 +2894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: f8cd52cd-153c-45ab-98f5-7ce68c42806a
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 806059e2-37a8-4e87-89e9-783d09097e1b
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 4c3b384d-01f5-442a-98af-6a3531c9e4ab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: b0054d50-3dfa-43db-b6aa-fa278da230ea
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: fa16946e-6c44-4d9e-a264-bf4fbf5e96ce
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &1090524581
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3473,96 +2929,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c2c4f631-44d9-4475-bddc-113a1adebeb8
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 33db62b2-a516-408c-9a1f-f09ee444d450
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 35d5bbda-74ee-430d-b1f9-e1ac22f9ccd1
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 80827823-5d80-4882-bf60-ef7beb710037
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ae37bb4c-9539-4f40-8365-5ccbfeb974b9
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!4 &1091755256 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
@@ -3806,56 +3174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: d0420fc9-b5bf-4340-be97-c6b37721a45c
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 65d57cd5-12ce-434c-94ea-2fdc3e8389a3
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: af7fa082-9c23-43b8-a01c-3793e01273e3
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e4b6a75f-6482-4183-adf7-295e069597de
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 52dbfe84-4a3b-4a19-b81d-4bb397b05443
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!65 &1143086874
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3915,96 +3235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7b8c0dd8-d302-4cad-a4ef-67f912062ecd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0a31b44d-2ad8-4cc8-bc41-32d17d0d50ab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 90141dc2-3368-4d20-bd9c-4715b9e515d6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e3028646-aaed-4465-99af-741234384e84
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 669cc65d-4feb-48f8-96c8-7ffa18f2ece9
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!1 &1163757069 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
@@ -4048,96 +3280,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7b8c0dd8-d302-4cad-a4ef-67f912062ecd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0a31b44d-2ad8-4cc8-bc41-32d17d0d50ab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 90141dc2-3368-4d20-bd9c-4715b9e515d6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e3028646-aaed-4465-99af-741234384e84
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 3cfe39b6-5bdf-4bb3-acd7-74c66ff95aff
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!1001 &1188048871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4308,56 +3452,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 9082d91d-f93d-4bc4-887b-f00a5e9eb383
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 074a6ce6-e2f9-45b6-ad2b-487dde2ab0ac
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ce6cab56-e7fb-4f30-9894-6c2a0d7eb186
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c346d538-d3b8-4f72-803c-d50d122a00ce
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0cd687f2-b944-40fa-9562-99812b028348
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &1190246078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4541,56 +3637,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7817f08c-e373-48ba-afe2-f986e0aade43
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ac2135c6-41f9-496f-97c0-6e1a79c3e2ed
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c918a097-3221-4639-a0a7-7d724826250e
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c306f869-a5b5-4b90-a38a-31a47e4023b1
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 1b05fff3-ec37-44c8-be74-d2f10dba79ab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &1299274896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4867,96 +3915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7b8c0dd8-d302-4cad-a4ef-67f912062ecd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0a31b44d-2ad8-4cc8-bc41-32d17d0d50ab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 90141dc2-3368-4d20-bd9c-4715b9e515d6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e3028646-aaed-4465-99af-741234384e84
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 543985aa-2332-48b4-b980-2ed956a5c227
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!1001 &1435628157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5055,56 +4015,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: afba0269-a664-4471-93ae-71cb698a79e4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 8c395d82-7b61-44a2-a957-a3aadd8d31b1
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 959bf437-bfbc-4ebe-abd8-b2878df16981
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0e4cf43c-8470-4257-abb5-fffbb7629c25
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e184c7d9-5f6a-4087-922c-00368bfd8618
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &1435628162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5138,96 +4050,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c3b496e5-0bac-4f86-a387-2f5b909a6731
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 08f1e49b-8f19-48b9-848a-9eaf3ad2860f
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ab393701-5229-4cab-b4a3-f8463d3cf033
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c52be446-57e4-45be-849c-845d0f5be11d
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ab4aa653-cc92-4af3-aef3-9ab0ab47c2a5
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!1001 &1438316829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5340,88 +4164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd1eb59550c62fcc3a90596d9c2945b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Knights
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: fbec01cf-b3ac-4ac7-beb0-44533e04b7bd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 73e9eb66-81eb-4fa1-8c4d-a491f57b8000
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: b9184b08-9c8f-4fde-ace5-9c2e8aaee40c
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 65d10e46-02b9-46bb-9f2b-3afc8881b48a
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 20f35eba-2fcb-4da4-b0ea-ba444682f546
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: be4d4b23-5351-4dbe-b107-2845860faaf1
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: dd1ae1a5-b88f-47c5-85f6-fecf62189ba3
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 17d80a04-d832-4329-bea5-55d8d956cd08
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: d2972991-22ac-4e04-b97a-12fe515fc2e4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!1 &1450351356 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
@@ -5460,96 +4204,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: d0dee0fb-3a42-4a8c-ba74-d541fc13d3e8
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 589190f9-f97f-453e-a107-20b594da845b
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 8f8a303a-f140-4855-90b7-ddd181f51e5d
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 5dec9cd4-22b5-490d-88b1-31208d19b2c4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 37606a11-0da2-4927-9fde-b537a49a2e7b
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!1 &1492330191 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: c5f20314b232248d3972665d64a42a3e, type: 3}
@@ -5667,88 +4323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd1eb59550c62fcc3a90596d9c2945b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Knights
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e5914a92-3356-4f91-95de-e6a0683560ad
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 86b78dd3-3e04-4c01-8288-b5d31be35ade
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 04175405-d19f-47cc-a3a5-239190ec3fe4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: c1b3ac39-9e6d-4aca-8f22-61db17adecb3
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: a19ed7a8-e331-4b5a-bf5f-04be1f159602
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 3875b3a4-b46d-4c59-8c73-40eed79d8d08
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: a7c1eda7-7167-4f6a-95df-65c2fe9737d5
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 0b991960-fe78-475e-9793-835edef5e05f
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c821a389-71db-4740-98f6-af25149311ed
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 1
   pieceColor: 1
+  isControllable: 0
 --- !u!4 &1526399161 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
@@ -5845,56 +4421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: a76a8e02-8ced-4e2d-8c3b-898da53d4e86
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 59c648c3-7da2-42dc-b6b7-59f2740c1270
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: bb41b5c6-e7ca-4d83-aaf3-788b3698d011
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e580f778-7bc9-4d44-8994-8aa7e6ff72fb
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: fd462a75-b590-4c05-acdb-e2f93c551030
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!65 &1559992381
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6004,56 +4532,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ea879472-7aea-4db7-8a96-c9761bfcc999
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0ee7e895-0940-4334-ab62-06312abbb0ef
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 4699211d-104f-453f-b210-639644dc5c35
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 37fcc86d-abeb-43d5-9203-f86d90c8664e
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0937506e-2bd9-40ac-9ccd-13d42dad45c5
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &1627105903
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6171,56 +4651,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 6b5aba02-ed49-4bf7-8f54-81ecaca7a507
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 1a002878-a086-4f03-941b-411cc4cbb4ba
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: a0f1d1a4-a755-4ac7-9eb1-a2209628f99e
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 30042155-366a-4f4f-a947-1ab17ddfaee2
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 3dd14a22-af80-446a-a759-9c38c643f65c
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &1668806481
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6308,55 +4740,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
---- !u!1 &1690460089
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1690460090}
-  - component: {fileID: 1690460091}
-  m_Layer: 0
-  m_Name: TurnBaseManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1690460090
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1690460089}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1739977966}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1690460091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1690460089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eb8cb2e2505712599019a32289b846d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TurnBasedSetup
-  pieceSelector: {fileID: 1728388850}
-  chessBoard: {fileID: 1070102510}
-  speed: 100
-  whiteTurn: 1
-  blackTurn: 0
 --- !u!1 &1717126733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: c5f20314b232248d3972665d64a42a3e, type: 3}
@@ -6374,56 +4757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ea00b892-9404-479e-8343-4d8b9978e673
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: dfaf0a56-f021-42ac-8d77-1a351b48248f
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 80a38254-f335-486f-b8ef-fc5d6b4d8344
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ba20d09b-bf6f-41b6-b270-af6434553a1e
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 6e9a5079-35dd-4039-a73e-a488db0cf0de
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &1717126737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6454,12 +4789,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1728388849}
+  - component: {fileID: 1728388854}
   - component: {fileID: 1728388853}
   - component: {fileID: 1728388852}
   - component: {fileID: 1728388851}
-  - component: {fileID: 1728388850}
   m_Layer: 0
-  m_Name: PieceSelector
+  m_Name: BaseChessGameplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6480,124 +4815,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1739977966}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1728388850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728388848}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a27b5d6d20fbfa74588cd35269b5cee7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SelectPieceToMove
-  Player: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c713a7fc-e26d-4373-8554-52def3f31b08
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 0742120f-10a4-4094-92f6-2447ae24836b
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: eabdb7fa-a161-4f61-b3b4-74756e3430d0
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 84404099-9464-46a6-9b0e-dccc58be5b12
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveUpAction:
-    m_Name: Move Up
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 4acf5bff-9cec-4c46-adde-ffbe20595ea3
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: ddeaaee4-d227-475b-8a12-3d2b3fed2b45
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Up
-      m_Flags: 0
-    m_Flags: 0
-  moveDownAction:
-    m_Name: Move Down
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 75e8e2aa-f1be-49fa-b256-676784ccea12
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 10e71437-8d08-4abe-8bc5-e9d3a2e341b0
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Down
-      m_Flags: 0
-    m_Flags: 0
-  select:
-    m_Name: Select
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 768e2dfe-f572-4223-8b3a-a45d243d99f5
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 54efda27-0a76-481a-a56b-9a233388c0ba
-      m_Path: <Keyboard>/enter
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Select
-      m_Flags: 0
-    m_Flags: 0
-  quitSelection:
-    m_Name: Quit Selection
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: b290fc44-411a-4891-b59a-1c42a1972b83
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: d8996e3a-e2b7-40d9-acc3-0d58f15f6be2
-      m_Path: <Keyboard>/space
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Quit Selection
-      m_Flags: 0
-    m_Flags: 0
-  moveDir: {x: 0, y: 0, z: 0}
-  QuitSelection: 0
-  lastPieceSelected: {fileID: 0}
 --- !u!65 &1728388851
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6676,6 +4893,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1728388848}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1728388854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728388848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4aeab50cd89aff228167df3b2a00304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BaseChessGameplay
 --- !u!1001 &1739977965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6846,9 +5075,6 @@ PrefabInstance:
       addedObject: {fileID: 1728388849}
     - targetCorrespondingSourceObject: {fileID: 400000, guid: bff675daa93e14cd1a91d9247f54ea89, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1690460090}
-    - targetCorrespondingSourceObject: {fileID: 400000, guid: bff675daa93e14cd1a91d9247f54ea89, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 138412821}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bff675daa93e14cd1a91d9247f54ea89, type: 3}
@@ -6874,56 +5100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 5c928b9e-21c2-4f1b-80cd-76caf4e08381
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c261accc-1d30-472e-b0dc-0dc1da6a4ab7
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 28284b6b-b330-408d-983b-664876296435
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: bfa029b1-b2cd-40a8-b469-333d0c955173
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 096d07fc-fe95-417c-9d97-5db9aa9827e5
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &1750774732
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6957,96 +5135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e366bf26-01cd-4940-9eab-31f60713c595
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 57bc5610-f4a3-49d7-aedd-adb626e9562f
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 1ef9d8e2-88e2-4d26-b8ad-1b21d97fe7a2
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 4bbe806d-7709-4053-8ebd-503d5c722a1a
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ec4bc137-1f87-4d5a-a886-3580b4a57adc
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!1 &1779011372 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
@@ -7064,56 +5154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 2b87526a-31d8-4018-aea6-728fea1f7d75
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 3e02318e-8cb8-46c8-a606-12c36678e27b
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c8ed9d73-91b4-4202-a62c-220c7a5c8414
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 8a160988-b375-4967-a84f-323904f8ebfe
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: a32e956f-b2b6-445c-923e-02efb4d53980
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &1779011376
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7147,96 +5189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7381f356-6bc6-4dbd-846f-9e415534c51d
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e64aa7f3-c41b-4afb-9380-cd967596a0f0
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 9e01e567-0ed9-4e06-8ad7-d82623c51bb2
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 2e99f0cf-e7b1-4438-bd1d-e51bcecf6d03
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0d63cc91-e909-4f5b-9c1b-531188a7975e
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!1 &1787433881 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
@@ -7275,96 +5229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7b8c0dd8-d302-4cad-a4ef-67f912062ecd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0a31b44d-2ad8-4cc8-bc41-32d17d0d50ab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 90141dc2-3368-4d20-bd9c-4715b9e515d6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e3028646-aaed-4465-99af-741234384e84
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7922eb25-56c2-41c6-9121-5a3d6fe49b3e
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!1001 &1813302246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7481,96 +5347,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7b8c0dd8-d302-4cad-a4ef-67f912062ecd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0a31b44d-2ad8-4cc8-bc41-32d17d0d50ab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 90141dc2-3368-4d20-bd9c-4715b9e515d6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e3028646-aaed-4465-99af-741234384e84
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ed527ac5-26d1-4828-b48f-91be08b479d2
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!4 &1830094384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
@@ -7598,56 +5376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: ccba703f-3ee8-4c64-a528-8e471fa5c8fc
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: fd52c8d8-58d1-467e-ba8d-d6ca0573ac75
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 71092229-b654-4da5-8daa-193be09e797b
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7c261efb-6c5f-45ae-a71c-ee137e5ba7dd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: dc28dcb7-c99d-4b19-b5a0-d59e5e081d22
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!65 &1847793499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7839,88 +5569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd1eb59550c62fcc3a90596d9c2945b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Knights
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: feb1249c-3f83-4a9b-a9aa-4b7891e7558b
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 86b78dd3-3e04-4c01-8288-b5d31be35ade
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 718b74f9-1f60-473e-bd59-ef2e9e10a1d5
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: c1b3ac39-9e6d-4aca-8f22-61db17adecb3
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: c25ce592-310d-415c-b2fb-5528b99f8158
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 3875b3a4-b46d-4c59-8c73-40eed79d8d08
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: fb2c3630-f8df-42e2-bdfe-8d2a4c47ccb4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 0b991960-fe78-475e-9793-835edef5e05f
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: f2de90c3-fd95-49c3-b520-4d3baab107d4
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 1
   pieceColor: 1
+  isControllable: 0
 --- !u!1 &1884239581 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 4ed40abe3301f47969aa44350488c7d0, type: 3}
@@ -7938,56 +5588,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: be31f3dd-6acb-446d-a017-a65a24e5d13c
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 25a3a196-6942-43e6-b8bb-fb75cc8eff19
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: da375e5e-540a-4201-8e1d-d64939e8198f
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 9e9e01e8-3687-4173-a310-b68e237b78ad
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 359d5280-09ed-487c-a5c4-6109576ee226
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!65 &1884239585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8047,96 +5649,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7b8c0dd8-d302-4cad-a4ef-67f912062ecd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0a31b44d-2ad8-4cc8-bc41-32d17d0d50ab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 90141dc2-3368-4d20-bd9c-4715b9e515d6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e3028646-aaed-4465-99af-741234384e84
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 592e9c23-8642-4d3b-afb6-a29a4d7de138
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!4 &1916209649 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
@@ -8273,96 +5787,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7b8c0dd8-d302-4cad-a4ef-67f912062ecd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0a31b44d-2ad8-4cc8-bc41-32d17d0d50ab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 90141dc2-3368-4d20-bd9c-4715b9e515d6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e3028646-aaed-4465-99af-741234384e84
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: d54bcba6-cae7-4000-852e-69df5a9eaefa
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!1001 &2017092583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8461,56 +5887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 6a73cc60-1340-46dc-9e6d-f6f7c04eb5d7
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 9452af10-7025-43a7-a81c-05a9850e08d1
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: efd81601-eb2f-42c8-87b2-7defb30c0606
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: abc36c75-1098-4efb-a0ab-153247f10ac2
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: d6fa8139-2141-4bd3-bb89-49e0ffa7a957
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
-    m_Flags: 0
-  turnBasedSetup: {fileID: 0}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!65 &2017092588
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8544,96 +5922,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7b8c0dd8-d302-4cad-a4ef-67f912062ecd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0a31b44d-2ad8-4cc8-bc41-32d17d0d50ab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 90141dc2-3368-4d20-bd9c-4715b9e515d6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e3028646-aaed-4465-99af-741234384e84
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 6d44ed1a-397c-4edc-8738-7164c29a6e82
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 1
+  isControllable: 0
 --- !u!1001 &2020538847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8816,96 +6106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32239e0136ea06a70874ee9256fb95bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pawns
-  moveForwardAction:
-    m_Name: Move Forward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 7b8c0dd8-d302-4cad-a4ef-67f912062ecd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 25fa80f2-88be-40d8-aa9d-b5436df3c023
-      m_Path: <Keyboard>/upArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Forward
-      m_Flags: 0
-    m_Flags: 0
-  moveBackwardAction:
-    m_Name: Move Backward
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 0a31b44d-2ad8-4cc8-bc41-32d17d0d50ab
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 82c22a67-a512-4360-b783-eba71e5a6427
-      m_Path: <Keyboard>/downArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Backward
-      m_Flags: 0
-    m_Flags: 0
-  moveLeftAction:
-    m_Name: Move Left
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 90141dc2-3368-4d20-bd9c-4715b9e515d6
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 35e9fff0-9bc5-4695-8edb-79760de76dc9
-      m_Path: <Keyboard>/leftArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Left
-      m_Flags: 0
-    m_Flags: 0
-  moveRightAction:
-    m_Name: Move Right
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: e3028646-aaed-4465-99af-741234384e84
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: f01fc4b5-49e2-4e58-bf25-57d543c7c72c
-      m_Path: <Keyboard>/rightArrow
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Move Right
-      m_Flags: 0
-    m_Flags: 0
-  pawnDoubleMoveAction:
-    m_Name: Pawn Double Move
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 9a772663-6a13-4a55-9d79-78e09f28f8cd
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 04ee4cbf-d8e9-4e97-89ef-4ac8aa20e566
-      m_Path: <Keyboard>/2
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Pawn Double Move
-      m_Flags: 0
-    m_Flags: 0
-  turnBasedSetup: {fileID: 1690460091}
-  isControllable: 0
-  canKill: 0
-  pieceType: 0
   pieceColor: 0
+  isControllable: 0
 --- !u!4 &2102333932 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}

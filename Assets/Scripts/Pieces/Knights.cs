@@ -2,70 +2,73 @@ using UnityEngine;
 
 public class Knights : ChessPieces
 {
-
     public override void Update()
     {
         base.Update();
+        HandleKnightMovement();
+    }
+    private void HandleKnightMovement()
+    {
         if(!isControllable) return;
         float d = pieceColor == PieceColor.White ? -1f : 1f;
-        if (moveRightAction.IsPressed())
+        if (chessActions.MoveRight.IsPressed())
         {
-            if (moveForwardAction.WasPressedThisFrame())
+            if (chessActions.MoveForward.WasPressedThisFrame())
             {
                 Vector3 predictedPosition = transform.localPosition + new Vector3(2.5f * d ,0 ,1.25f * d);
-                if (KillPiecesInPredictedPosition(predictedPosition))
+                if (CanKillPiecesInPredictedPosition(predictedPosition))
                 {
                     if (predictedPosition.x <= 8.75f && predictedPosition.x >= 0f && predictedPosition.z <= 8.75f &&
                         predictedPosition.z >= 0f)
                     {
                         transform.localPosition += new Vector3( 2.5f * d, 0, 1.25f * d);
-                        turnBasedSetup.finishedTurn(pieceColor);
+                        gameplay.HasPlayed(pieceColor);
                         isControllable = false;
                     }
                 }
                 
             }
-            else if (moveBackwardAction.WasPressedThisFrame())
+            else if (chessActions.MoveBackward.WasPressedThisFrame())
             {
                 Vector3 predictedPosition = transform.localPosition + new Vector3(2.5f * d ,0 ,-1.25f * d);
-                if(KillPiecesInPredictedPosition(predictedPosition))
+                if(CanKillPiecesInPredictedPosition(predictedPosition))
                 {
                     if (predictedPosition.x <= 8.75f && predictedPosition.x >= 0f && predictedPosition.z <= 8.75f &&
                         predictedPosition.z >= 0f)
                     {
                         transform.localPosition += new Vector3( + 2.5f * d, 0,- 1.25f * d);
-                        turnBasedSetup.finishedTurn(pieceColor);
+                        gameplay.HasPlayed(pieceColor);
                         isControllable = false;
                     }
                 }
             }
         }
-        else if (moveLeftAction.IsPressed())
+        else if (chessActions.MoveLeft.IsPressed())
         {
-            if (moveForwardAction.WasPressedThisFrame())
+            if (chessActions.MoveForward.WasPressedThisFrame())
             {
                 Vector3 predictedPosition = transform.localPosition + new Vector3(-2.5f * d ,0 ,1.25f * d);
-                if (KillPiecesInPredictedPosition(predictedPosition))
+                if (CanKillPiecesInPredictedPosition(predictedPosition))
                 {
                     if (predictedPosition.x <= 8.75f && predictedPosition.x >= 0f && predictedPosition.z <= 8.75f &&
                         predictedPosition.z >= 0f)
                     {
-                        turnBasedSetup.finishedTurn(pieceColor);
+                        gameplay.HasPlayed(pieceColor);
                         isControllable = false;
                         transform.localPosition += new Vector3( - 2.5f * d, 0, + 1.25f * d);
                     }
                 }
                 
             }
-            else if (moveBackwardAction.WasPressedThisFrame())
+            else if (chessActions.MoveBackward.WasPressedThisFrame())
             {
                 Vector3 predictedPosition = transform.localPosition + new Vector3(-2.5f * d ,0 ,-1.25f * d);
-                if (KillPiecesInPredictedPosition(predictedPosition))
+                if (CanKillPiecesInPredictedPosition(predictedPosition))
                 {
                     if (predictedPosition.x <= 8.75f && predictedPosition.x >= 0f && predictedPosition.z <= 8.75f &&
                         predictedPosition.z >= 0f)
                     {
-                        turnBasedSetup.finishedTurn(pieceColor);
+                        gameplay.HasPlayed(pieceColor);
                         isControllable = false;
                         transform.localPosition += new Vector3( -2.5f * d, 0,- 1.25f * d);
                     }
@@ -73,63 +76,63 @@ public class Knights : ChessPieces
                
             }
         }
-        if (moveForwardAction.IsPressed())
+        if (chessActions.MoveForward.IsPressed())
         {
-            if (moveLeftAction.WasPressedThisFrame())
+            if (chessActions.MoveLeft.WasPressedThisFrame())
             {
                 Vector3 predictedPosition = transform.localPosition + new Vector3(-1.25f * d ,0 ,2.5f * d);
-                if (KillPiecesInPredictedPosition(predictedPosition))
+                if (CanKillPiecesInPredictedPosition(predictedPosition))
                 {
                     if (predictedPosition.x <= 8.75f && predictedPosition.x >= 0f && predictedPosition.z <= 8.75f &&
                         predictedPosition.z >= 0f)
                     {
-                        turnBasedSetup.finishedTurn(pieceColor);
+                        gameplay.HasPlayed(pieceColor);
                         isControllable = false;
                         transform.localPosition += new Vector3( - 1.25f * d, 0, +2.5f * d);
                     }
                 }
             }
-            else if (moveRightAction.WasPressedThisFrame())
+            else if (chessActions.MoveRight.WasPressedThisFrame())
             {
                 Vector3 predictedPosition = transform.localPosition + new Vector3(+1.25f * d ,0 ,2.5f * d);
-                if (KillPiecesInPredictedPosition(predictedPosition))
+                if (CanKillPiecesInPredictedPosition(predictedPosition))
                 {
                     if (predictedPosition.x <= 8.75f && predictedPosition.x >= 0f && predictedPosition.z <= 8.75f &&
                         predictedPosition.z >= 0f)
                     {
-                        turnBasedSetup.finishedTurn(pieceColor);
+                        gameplay.HasPlayed(pieceColor);
                         isControllable = false;
                         transform.localPosition += new Vector3(+ 1.25f * d, 0,+2.5f * d);
                     }
                 }
             }
         }
-        else if(moveBackwardAction.IsPressed())
+        else if(chessActions.MoveBackward.IsPressed())
         {
-            if (moveLeftAction.WasPressedThisFrame())
+            if (chessActions.MoveLeft.WasPressedThisFrame())
             {
                 Vector3 predictedPosition = transform.localPosition + new Vector3(-1.25f * d ,0 ,-2.5f * d);
-                if (KillPiecesInPredictedPosition(predictedPosition))
+                if (CanKillPiecesInPredictedPosition(predictedPosition))
                 {
                     if (predictedPosition.x <= 8.75f && predictedPosition.x >= 0f && predictedPosition.z <= 8.75f &&
                         predictedPosition.z >= 0f)
                     {
-                        turnBasedSetup.finishedTurn(pieceColor);
+                        gameplay.HasPlayed(pieceColor);
                         isControllable = false;
                         transform.localPosition += new Vector3(- 1.25f * d, 0, -2.5f * d);
                     }
                 }
                
             }
-            else if (moveRightAction.WasPressedThisFrame())
+            else if (chessActions.MoveRight.WasPressedThisFrame())
             {
                 Vector3 predictedPosition = transform.localPosition + new Vector3(+1.25f * d ,0 ,-2.5f * d);
-                if (KillPiecesInPredictedPosition(predictedPosition))
+                if (CanKillPiecesInPredictedPosition(predictedPosition))
                 {
                     if (predictedPosition.x <= 8.75f && predictedPosition.x >= 0f && predictedPosition.z <= 8.75f &&
                         predictedPosition.z >= 0f)
                     {
-                        turnBasedSetup.finishedTurn(pieceColor);
+                        gameplay.HasPlayed(pieceColor);
                         isControllable = false;
                         transform.localPosition += new Vector3( + 1.25f * d, 0, -2.5f * d);
                     }
@@ -138,8 +141,7 @@ public class Knights : ChessPieces
             }
         }
     }
-
-    private bool KillPiecesInPredictedPosition(Vector3 predictedPosition)
+    private bool CanKillPiecesInPredictedPosition(Vector3 predictedPosition)
     {
         Vector3 halfExtents = new Vector3(0.4f, 0.4f, 0.4f);
         Collider[] hits = Physics.OverlapBox(predictedPosition, halfExtents);

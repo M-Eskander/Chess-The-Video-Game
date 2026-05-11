@@ -1,7 +1,4 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Serialization;
-using UnityEngine.InputSystem;
 
 public class Pawns : ChessPieces
 {
@@ -9,21 +6,23 @@ public class Pawns : ChessPieces
     public override void Update()
     {
         base.Update();
+        HandlePawnMovement();
+    }
+    private void HandlePawnMovement()
+    {
         if(!isControllable) return;
-        canKill = false;
         RaycastHit hitRight, hitLeft;
         if (Physics.Raycast(transform.position, new Vector3(-1 ,0,1), out hitLeft,  1.25f))
         {
             ChessPieces killablePieceLeft = hitLeft.collider.gameObject.GetComponent<ChessPieces>();
             if (killablePieceLeft != null && killablePieceLeft.pieceColor != pieceColor)
             {
-                canKill = true;
-                if (moveForwardAction.IsPressed())
+                if (chessActions.MoveForward.IsPressed())
                 {
-                    if (moveLeftAction.WasPressedThisFrame())
+                    if (chessActions.MoveLeft.WasPressedThisFrame())
                     {
                         transform.localPosition = killablePieceLeft.transform.localPosition;
-                        turnBasedSetup.finishedTurn(pieceColor);
+                        gameplay.HasPlayed(pieceColor);
                         isControllable = false;
                         Destroy(killablePieceLeft.gameObject);
                     }
@@ -35,20 +34,19 @@ public class Pawns : ChessPieces
             ChessPieces killablePieceRight = hitRight.collider.gameObject.GetComponent<ChessPieces>();
             if (killablePieceRight != null && killablePieceRight.pieceColor != pieceColor)
             {
-                canKill = true;
-                if (moveForwardAction.IsPressed())
+                if (chessActions.MoveForward.IsPressed())
                 {
-                    if (moveRightAction.WasPressedThisFrame())
+                    if (chessActions.MoveRight.WasPressedThisFrame())
                     {
                         transform.localPosition = killablePieceRight.transform.localPosition;
-                        turnBasedSetup.finishedTurn(pieceColor);
+                        gameplay.HasPlayed(pieceColor);
                         isControllable = false;
                         Destroy(killablePieceRight.gameObject);
                     }
                 }
             }
         }
-        if (moveForwardAction.WasReleasedThisFrame() && transform.localPosition.z < 8.75f)
+        if (chessActions.MoveForward.WasReleasedThisFrame() && transform.localPosition.z < 8.75f)
         {
             RaycastHit hit;
             bool blocked = Physics.Raycast(transform.position, _pawnMoveDistance.normalized, out hit, 1.25f)
@@ -56,7 +54,7 @@ public class Pawns : ChessPieces
             if (!blocked)
             {
                 float multiplier = 1;
-                if (pawnDoubleMoveAction.IsPressed())
+                if (chessActions.Num2.IsPressed())
                 {
                     if (pieceColor == PieceColor.White)
                     {
@@ -78,7 +76,7 @@ public class Pawns : ChessPieces
                     transform.localPosition += -1 * _pawnMoveDistance * multiplier;
                 else
                     transform.localPosition += _pawnMoveDistance * multiplier;
-                turnBasedSetup.finishedTurn(pieceColor);
+                gameplay.HasPlayed(pieceColor);
                 isControllable = false;
             }
         }

@@ -1,43 +1,62 @@
-using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class ChessPieces : MonoBehaviour
 {
-    public InputAction moveForwardAction;
-    public InputAction moveBackwardAction;
-    public InputAction moveLeftAction;
-    public InputAction moveRightAction;
-    public InputAction pawnDoubleMoveAction;
-    public TurnBasedSetup turnBasedSetup;
+    private Controls chessControls;
+    protected Controls.ChessActions chessActions;
+    protected BaseChessGameplay gameplay;
+    public enum PieceColor {White, Black}
+    [HideInInspector] public PieceColor pieceColor;
+    [HideInInspector] public bool isControllable;
 
-    public virtual void OnEnable()
+    void Awake()
     {
-        moveForwardAction.Enable();
-        moveBackwardAction.Enable();
-        moveLeftAction.Enable();
-        moveRightAction.Enable();
-        pawnDoubleMoveAction.Enable();
+        chessControls = new Controls();
+        chessActions = chessControls.Chess;
+        string[] requiredLayers = { "WhiteChess", "BlackChess"};
+        foreach (string layer in requiredLayers)
+        {
+            if (LayerMask.NameToLayer(layer) == -1)
+            {
+                Debug.LogError($"Required layer '{layer}' is missing!");
+                enabled = false;
+                return;
+            }
+        }
     }
-    
-    public bool isControllable = false;
-    public bool canKill;
-    public enum PieceColor { White, Black }
-    public PieceColor pieceColor;
-
+    void OnDestroy()
+    {
+        chessControls.Dispose();                         
+    }
+    void OnEnable()
+    {
+        chessActions.Enable();                               
+    }
+    void OnDisable()
+    {
+        chessActions.Disable();                         
+    }
+    void Start()
+    {
+        gameplay = FindAnyObjectByType<BaseChessGameplay>();
+        if (gameplay == null) Debug.LogError("Couldn't find gameplay");
+        if(pieceColor == PieceColor.White) 
+            gameObject.layer = LayerMask.NameToLayer("WhiteChess");
+        else 
+            gameObject.layer = LayerMask.NameToLayer("BlackChess");
+    }
     public virtual void Update()
     {
-        CheckForNearbyEnemies();
-        HighlightPiece();
+        /*CheckForNearbyEnemies();
+        HighlightPiece();*/
     }
-
+    
     private void HighlightPiece() //not being used yet
     {
         if (isControllable)
             transform.GetChild(0).gameObject.SetActive(true);
         //add highlight possible positions
     }
-
     protected virtual void CheckForNearbyEnemies() //not being used
     {
         Vector3 center = transform.position;
