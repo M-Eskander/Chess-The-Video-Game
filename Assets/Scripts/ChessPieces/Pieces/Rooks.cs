@@ -8,7 +8,7 @@ namespace chessPieces.Pieces
         private Vector3 _predictedPosition;
         private bool _played =  true;
         public override void Update()
-        {
+        {   //organise movement
             base.Update();
             if (!isControllable) return;
             if (chessActions.MoveForward.IsPressed())

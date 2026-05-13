@@ -87,10 +87,15 @@ namespace Gameplay
                 {
                     transform.localPosition = _hoverPos;
                     transform.GetChild(0).gameObject.SetActive(true);
+                    //_chooseActionPressed = false;
                 }
-                if (_chessActions.Choose.WasPressedThisFrame())
+                if (_chessActions.Choose.IsPressed())
                 {
                     _chooseActionPressed = true;
+                }
+                else
+                {
+                    _chooseActionPressed = false;
                 }
             }
             if (_chessActions.Exit.WasPressedThisFrame() || _quitSelection)
@@ -118,7 +123,7 @@ namespace Gameplay
         {
             if (_movingPiece) return;
             ChessPieces piece = other.gameObject.GetComponent<ChessPieces>();
-            if(piece.pieceColor.ToString() != _player.ToString())
+            if(piece == null || piece.pieceColor.ToString() != _player.ToString())
             {_chooseActionPressed = false; return;}
             Debug.Log("Piece: " + piece);
             if (piece != null)
