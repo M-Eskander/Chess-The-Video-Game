@@ -8,8 +8,10 @@ namespace MainClasses
         protected Controls.ChessActions chessActions;
         protected Gameplay.BaseChessGameplay baseGameplay;
         public enum PieceColor {White,Black}
-        [HideInInspector] public PieceColor pieceColor;
+        public PieceColor pieceColor;
         [HideInInspector] public bool isControllable;
+        protected float wantedDistance;
+        protected float dir;
         
         void Awake()
         {
@@ -42,15 +44,61 @@ namespace MainClasses
         {
             baseGameplay = FindAnyObjectByType<Gameplay.BaseChessGameplay>();
             if (baseGameplay == null) Debug.LogError("Couldn't find gameplay");
-            if (pieceColor == PieceColor.White)
-                gameObject.layer = LayerMask.NameToLayer("WhiteChess");
-            else
-                gameObject.layer = LayerMask.NameToLayer("BlackChess");
+            gameObject.layer = pieceColor == PieceColor.White? LayerMask.NameToLayer("WhiteChess") : LayerMask.NameToLayer("BlackChess");
         }
         public virtual void Update()
         {
+            dir = pieceColor == PieceColor.White ? -1f : 1f;
             /*CheckForNearbyEnemies();
             HighlightPiece();*/
+        }
+        protected bool CalculateWantedDistance()
+        {
+            var numKeys = new[]
+            {
+                chessActions.Num2,
+                chessActions.Num3,
+                chessActions.Num4,
+                chessActions.Num5,
+                chessActions.Num6,
+                chessActions.Num7
+            };
+            for (int i = 0; i < numKeys.Length; i++)
+            {
+                if (numKeys[i].WasPressedThisFrame())
+                {
+                    wantedDistance = (i + 2) * 1.25f;
+                    return true;
+                }
+            }
+            return false;
+        }
+        protected virtual bool CanKillPiecesInPredictedPosition(Vector3 predictedPosition)
+        {
+            Vector3 originPos = transform.localPosition;
+            Vector3 directedPosition = predictedPosition - transform.localPosition;
+            float distance = directedPosition.magnitude;
+            
+            if(pieceColor == PieceColor.White)
+                originPos = new Vector3(8.75f - originPos.x, originPos.y, 8.75f - originPos.z);
+
+            if (Physics.Raycast(originPos, dir * directedPosition, out RaycastHit hit, distance))
+            {
+                ChessPieces killablePiece = hit.collider.gameObject.GetComponent<ChessPieces>();
+                if (killablePiece.transform.localPosition != predictedPosition) return false;
+                if (killablePiece.pieceColor != pieceColor)
+                {
+                    Destroy(killablePiece.gameObject);
+                    return true;
+                }
+                else{return false;}
+            } return true;
+        }
+        protected bool isPredictedPositionOnBoard(Vector3 predictedPosition)
+        {
+            if (predictedPosition.x <= 8.75f && predictedPosition.x >= 0 &&
+                predictedPosition.z <= 8.75f && predictedPosition.z >= 0)
+                {return true;} else {return false;}
         }
 
         /*private void HighlightPiece() //not being used yet

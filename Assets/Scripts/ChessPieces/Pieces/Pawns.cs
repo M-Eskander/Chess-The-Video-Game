@@ -12,7 +12,7 @@ namespace chessPieces.Pieces
         }
         private void HandlePawnMovement()
         {
-            if(!isControllable) return;
+            if (!isControllable) return;
             RaycastHit hitRight, hitLeft;
             if (Physics.Raycast(transform.position, new Vector3(-1 ,0,1), out hitLeft,  1.25f))
             {
