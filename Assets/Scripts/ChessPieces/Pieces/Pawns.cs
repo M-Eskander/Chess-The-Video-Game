@@ -48,6 +48,8 @@ namespace chessPieces.Pieces
                     }
                 }
             }
+
+            var multiplier = CheckIfCanDoubleStep();
             if (chessActions.MoveForward.WasReleasedThisFrame() && transform.localPosition.z < 8.75f)
             {
                 RaycastHit hit;
@@ -55,25 +57,6 @@ namespace chessPieces.Pieces
                                && hit.collider.GetComponent<ChessPieces>() != null;
                 if (!blocked)
                 {
-                    float multiplier = 1;
-                    if (chessActions.Num2.IsPressed())
-                    {
-                        if (pieceColor == PieceColor.White)
-                        {
-                            if (transform.localPosition.z == 7.5f)
-                                multiplier = 2;
-                        }
-                        else
-                        {
-                            if (transform.localPosition.z == 1.25f)
-                                multiplier = 2;
-                        }
-                    }
-                    else
-                    {
-                        multiplier = 1;
-                    }
-                    
                     if(pieceColor == PieceColor.White)
                         transform.localPosition += -1 * _pawnMoveDistance * multiplier;
                     else
@@ -82,6 +65,33 @@ namespace chessPieces.Pieces
                     isControllable = false;
                 }
             }
+        }
+
+        private float CheckIfCanDoubleStep()
+        {
+            RaycastHit hit2;
+            bool blocked2 = Physics.Raycast(transform.position, _pawnMoveDistance.normalized, out hit2, 2.5f)
+                            && hit2.collider.GetComponent<ChessPieces>() != null;
+            float multiplier = 1;
+            if (chessActions.Num2.IsPressed() && !blocked2)
+            {
+                if (pieceColor == PieceColor.White)
+                {
+                    if (transform.localPosition.z == 7.5f)
+                        multiplier = 2;
+                }
+                else
+                {
+                    if (transform.localPosition.z == 1.25f)
+                        multiplier = 2;
+                }
+            }
+            else
+            {
+                multiplier = 1;
+            }
+
+            return multiplier;
         }
     }
 }

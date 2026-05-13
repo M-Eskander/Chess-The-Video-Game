@@ -82,9 +82,11 @@ namespace MainClasses
             if(pieceColor == PieceColor.White)
                 originPos = new Vector3(8.75f - originPos.x, originPos.y, 8.75f - originPos.z);
 
+            
             if (Physics.Raycast(originPos, dir * directedPosition, out RaycastHit hit, distance))
             {
                 ChessPieces killablePiece = hit.collider.gameObject.GetComponent<ChessPieces>();
+                if (killablePiece == null) return true;
                 if (killablePiece.transform.localPosition != predictedPosition) return false;
                 if (killablePiece.pieceColor != pieceColor)
                 {
@@ -96,9 +98,9 @@ namespace MainClasses
         }
         protected bool isPredictedPositionOnBoard(Vector3 predictedPosition)
         {
-            if (predictedPosition.x <= 8.75f && predictedPosition.x >= 0 &&
-                predictedPosition.z <= 8.75f && predictedPosition.z >= 0)
-                {return true;} else {return false;}
+            float tolerance = 0.01f;
+            return predictedPosition.x <= 8.75f + tolerance && predictedPosition.x >= -tolerance &&
+                   predictedPosition.z <= 8.75f + tolerance && predictedPosition.z >= -tolerance;
         }
 
         /*private void HighlightPiece() //not being used yet
