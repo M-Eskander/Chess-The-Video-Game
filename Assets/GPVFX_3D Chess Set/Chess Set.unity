@@ -376,6 +376,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
   m_PrefabInstance: {fileID: 4042030438649430710}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &288871133 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+  m_PrefabInstance: {fileID: 1693705674}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &315238833 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
@@ -742,11 +747,11 @@ PrefabInstance:
       addedObject: {fileID: 1029577581}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 4ed40abe3301f47969aa44350488c7d0, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 746029536}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 4ed40abe3301f47969aa44350488c7d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 746029538}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 4ed40abe3301f47969aa44350488c7d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 746029541}
   m_SourcePrefab: {fileID: 100100000, guid: 4ed40abe3301f47969aa44350488c7d0, type: 3}
 --- !u!4 &432434841 stripped
 Transform:
@@ -831,6 +836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: King W
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9c7ba5185d28d475b902a82911b83e2c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9c7ba5185d28d475b902a82911b83e2c, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -891,11 +900,11 @@ PrefabInstance:
       addedObject: {fileID: 1091755256}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 9c7ba5185d28d475b902a82911b83e2c, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 1022113187}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 9c7ba5185d28d475b902a82911b83e2c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1022113189}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 9c7ba5185d28d475b902a82911b83e2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1022113192}
   m_SourcePrefab: {fileID: 100100000, guid: 9c7ba5185d28d475b902a82911b83e2c, type: 3}
 --- !u!4 &453058312 stripped
 Transform:
@@ -918,6 +927,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
       propertyPath: m_Name
       value: Pawn W5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
       propertyPath: m_RootOrder
@@ -1218,7 +1231,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d09888fb380864d7d820ffed5c260deb, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 400000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 288871133}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
       insertIndex: 1
@@ -1266,7 +1282,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.000000745058, y: 0.65809566, z: -0.000000745058}
 --- !u!114 &661606214
 MonoBehaviour:
@@ -1312,7 +1328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.4999998
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1354,11 +1370,14 @@ PrefabInstance:
       addedObject: {fileID: 244226154}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 827040583}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
       insertIndex: -1
       addedObject: {fileID: 827040585}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 827040588}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 827040589}
   m_SourcePrefab: {fileID: 100100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
 --- !u!4 &673006271 stripped
 Transform:
@@ -1468,11 +1487,11 @@ PrefabInstance:
       addedObject: {fileID: 264841514}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 4ed40abe3301f47969aa44350488c7d0, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 1884239583}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 4ed40abe3301f47969aa44350488c7d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1884239585}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 4ed40abe3301f47969aa44350488c7d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1884239588}
   m_SourcePrefab: {fileID: 100100000, guid: 4ed40abe3301f47969aa44350488c7d0, type: 3}
 --- !u!4 &682042827 stripped
 Transform:
@@ -1503,7 +1522,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.000000745058, y: 0.65809566, z: -0.000000745058}
 --- !u!114 &686708156
 MonoBehaviour:
@@ -1585,20 +1604,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 4ed40abe3301f47969aa44350488c7d0, type: 3}
   m_PrefabInstance: {fileID: 432434840}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &746029536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746029534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  pieceColor: 1
-  isControllable: 0
 --- !u!65 &746029538
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1618,8 +1623,22 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0782429, y: 2.4078307, z: 1.0782429}
+  m_Size: {x: 0.72, y: 2.4078307, z: 1.0782429}
   m_Center: {x: -0.00000035762787, y: 1.2039154, z: 0.0000005066394}
+--- !u!114 &746029541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746029534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82034c43bf4ecc75a867c5465d5b6241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::chessPieces.Pieces.Queens
+  pieceColor: 0
+  isControllable: 0
 --- !u!1 &748578094 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 4b1b985d7c66d4cba91946bc280878ce, type: 3}
@@ -2058,20 +2077,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
   m_PrefabInstance: {fileID: 673006270}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &827040583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827040581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  pieceColor: 0
-  isControllable: 0
 --- !u!65 &827040585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2091,8 +2096,36 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0163952, y: 2.1196647, z: 1.0163952}
+  m_Size: {x: 0.96, y: 2.1196647, z: 1.0163952}
   m_Center: {x: -0.00000008940696, y: 1.0265379, z: -0.00000047683716}
+--- !u!114 &827040588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827040581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ca43abc448108eca42ec4987794879, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::chessPieces.Pieces.Bishops
+  pieceColor: 0
+  isControllable: 0
+--- !u!114 &827040589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827040581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ca43abc448108eca42ec4987794879, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::chessPieces.Pieces.Bishops
+  pieceColor: 0
+  isControllable: 0
 --- !u!1 &844257172
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,7 +2391,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0220122, y: 1.6987712, z: 0.8822416}
+  m_Size: {x: 0.72, y: 1.6987712, z: 0.8822416}
   m_Center: {x: 0.06988544, y: 0.84938526, z: -0.0000013709068}
 --- !u!114 &884691719
 MonoBehaviour:
@@ -2395,6 +2428,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
       propertyPath: m_Name
       value: Pawn W7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
       propertyPath: m_RootOrder
@@ -2578,20 +2615,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 9c7ba5185d28d475b902a82911b83e2c, type: 3}
   m_PrefabInstance: {fileID: 453058311}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1022113187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1022113185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  pieceColor: 0
-  isControllable: 0
 --- !u!65 &1022113189
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2611,8 +2634,22 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0782429, y: 2.9071732, z: 1.0782429}
+  m_Size: {x: 0.72, y: 2.9071732, z: 1.0782429}
   m_Center: {x: -0.00000014901161, y: 1.4358168, z: -0.000001937151}
+--- !u!114 &1022113192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022113185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43579f2b1f3a69979b7ff55ce4fc6238, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::chessPieces.Pieces.Kings
+  pieceColor: 0
+  isControllable: 0
 --- !u!4 &1029577581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
@@ -2909,7 +2946,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.0000012218952, y: 0.65809566, z: -0.000000745058}
 --- !u!114 &1090524582
 MonoBehaviour:
@@ -3192,7 +3229,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0163952, y: 1.6172988, z: 1.0163952}
+  m_Size: {x: 0.72, y: 1.6172988, z: 1.0163952}
   m_Center: {x: -0.00000062584877, y: 0.80864906, z: -0.0000014305115}
 --- !u!114 &1143086877
 MonoBehaviour:
@@ -3232,7 +3269,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.000000745058, y: 0.65809566, z: -0.0000012218952}
 --- !u!114 &1156220547
 MonoBehaviour:
@@ -3277,7 +3314,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.000000745058, y: 0.65809566, z: -0.0000012218952}
 --- !u!114 &1170032810
 MonoBehaviour:
@@ -3365,11 +3402,11 @@ PrefabInstance:
       addedObject: {fileID: 1916209649}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 1847793497}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1847793499}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1847793502}
   m_SourcePrefab: {fileID: 100100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
 --- !u!4 &1188048872 stripped
 Transform:
@@ -3444,31 +3481,17 @@ PrefabInstance:
       addedObject: {fileID: 1846061227}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 1190246076}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1190246078}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1190246081}
   m_SourcePrefab: {fileID: 100100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
 --- !u!4 &1190246074 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
   m_PrefabInstance: {fileID: 1190246073}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1190246076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861314237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  pieceColor: 1
-  isControllable: 0
 --- !u!65 &1190246078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3488,8 +3511,22 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0163952, y: 2.1196647, z: 1.0163952}
+  m_Size: {x: 0.96, y: 2.1196647, z: 1.0163952}
   m_Center: {x: -0.00000032782555, y: 1.0265379, z: 0.00000047683713}
+--- !u!114 &1190246081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861314237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ca43abc448108eca42ec4987794879, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::chessPieces.Pieces.Bishops
+  pieceColor: 1
+  isControllable: 0
 --- !u!1001 &1253249784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3673,7 +3710,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0782429, y: 2.9071732, z: 1.0782429}
+  m_Size: {x: 0.72, y: 2.9071732, z: 1.0782429}
   m_Center: {x: -0.00000014901161, y: 1.4358168, z: -0.0000009834765}
 --- !u!1001 &1386131897
 PrefabInstance:
@@ -3756,6 +3793,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
       propertyPath: m_Name
       value: Pawn B4
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
       propertyPath: m_RootOrder
@@ -3913,7 +3954,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.0000012218952, y: 0.65809566, z: -0.0000012218952}
 --- !u!114 &1427382707
 MonoBehaviour:
@@ -3940,6 +3981,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
       propertyPath: m_Name
       value: Pawn B2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
       propertyPath: m_RootOrder
@@ -4031,7 +4076,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.000000745058, y: 0.65809566, z: -0.000000745058}
 --- !u!114 &1435628163
 MonoBehaviour:
@@ -4149,7 +4194,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0220122, y: 1.6987712, z: 0.8822416}
+  m_Size: {x: 0.72, y: 1.6987712, z: 0.8822416}
   m_Center: {x: 0.06988496, y: 0.84938526, z: -0.0000013709068}
 --- !u!114 &1438316835
 MonoBehaviour:
@@ -4189,7 +4234,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.0000016987324, y: 0.65809566, z: -0.0000012218952}
 --- !u!114 &1450351361
 MonoBehaviour:
@@ -4308,7 +4353,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0220122, y: 1.6987712, z: 0.8822416}
+  m_Size: {x: 0.72, y: 1.6987712, z: 0.8822416}
   m_Center: {x: 0.06988496, y: 0.84938526, z: -0.00000041723249}
 --- !u!114 &1496878418
 MonoBehaviour:
@@ -4431,7 +4476,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0163952, y: 1.6172988, z: 1.0163952}
+  m_Size: {x: 0.72, y: 1.6172988, z: 1.0163952}
   m_Center: {x: 0.00000032782552, y: 0.80864906, z: -0.0000014305115}
 --- !u!114 &1559992384
 MonoBehaviour:
@@ -4542,7 +4587,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0163952, y: 1.6172988, z: 1.0163952}
+  m_Size: {x: 0.72, y: 1.6172988, z: 1.0163952}
   m_Center: {x: 0.00000032782552, y: 0.80864906, z: -0.00000047683713}
 --- !u!114 &1627105906
 MonoBehaviour:
@@ -4631,31 +4676,17 @@ PrefabInstance:
       addedObject: {fileID: 1944924414}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 1668806479}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1668806481}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1668806484}
   m_SourcePrefab: {fileID: 100100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
 --- !u!4 &1668806477 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
   m_PrefabInstance: {fileID: 1668806476}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1668806479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 315238833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  pieceColor: 1
-  isControllable: 0
 --- !u!65 &1668806481
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4675,8 +4706,22 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0163952, y: 2.1196647, z: 1.0163952}
+  m_Size: {x: 0.96, y: 2.1196647, z: 1.0163952}
   m_Center: {x: -0.0000005662441, y: 1.0265379, z: 0.00000047683713}
+--- !u!114 &1668806484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315238833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ca43abc448108eca42ec4987794879, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::chessPieces.Pieces.Bishops
+  pieceColor: 1
+  isControllable: 0
 --- !u!4 &1672937454 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
@@ -4743,6 +4788,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+--- !u!1001 &1693705674
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 596141619}
+    m_Modifications:
+    - target: {fileID: 1861223175874778235, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+      propertyPath: m_Name
+      value: Plane
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861223175874778235, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000049999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
 --- !u!1 &1717126733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: c5f20314b232248d3972665d64a42a3e, type: 3}
@@ -4767,7 +4873,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0163952, y: 1.6172988, z: 1.0163952}
+  m_Size: {x: 0.72, y: 1.6172988, z: 1.0163952}
   m_Center: {x: -0.00000062584877, y: 0.80864906, z: -0.00000047683713}
 --- !u!114 &1717126740
 MonoBehaviour:
@@ -5161,7 +5267,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.0000012218952, y: 0.65809566, z: -0.000000745058}
 --- !u!114 &1750774733
 MonoBehaviour:
@@ -5201,7 +5307,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.0000009834766, y: 0.65809566, z: -0.000000745058}
 --- !u!114 &1779011377
 MonoBehaviour:
@@ -5241,7 +5347,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.0000009834766, y: 0.65809566, z: -0.0000012218952}
 --- !u!114 &1787433886
 MonoBehaviour:
@@ -5363,7 +5469,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.000000745058, y: 0.65809566, z: -0.0000012218952}
 --- !u!114 &1813302252
 MonoBehaviour:
@@ -5394,20 +5500,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 3ebcae0daf8394e548da469833b04106, type: 3}
   m_PrefabInstance: {fileID: 1188048871}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1847793497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847793495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  pieceColor: 0
-  isControllable: 0
 --- !u!65 &1847793499
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5427,8 +5519,22 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0163952, y: 2.1196647, z: 1.0163952}
+  m_Size: {x: 0.96, y: 2.1196647, z: 1.0163952}
   m_Center: {x: -0.0000005662441, y: 1.0265379, z: -0.00000047683716}
+--- !u!114 &1847793502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847793495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ca43abc448108eca42ec4987794879, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::chessPieces.Pieces.Bishops
+  pieceColor: 0
+  isControllable: 0
 --- !u!4 &1851775583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3907091782055926777, guid: 0811de1b7bda45f2caea9a38fb8e28cb, type: 3}
@@ -5585,7 +5691,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0220122, y: 1.6987712, z: 0.8822416}
+  m_Size: {x: 0.72, y: 1.6987712, z: 0.8822416}
   m_Center: {x: 0.06988532, y: 0.84938526, z: -0.00000041723249}
 --- !u!114 &1880276172
 MonoBehaviour:
@@ -5606,20 +5712,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 4ed40abe3301f47969aa44350488c7d0, type: 3}
   m_PrefabInstance: {fileID: 682042826}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1884239583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1884239581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f89abf83716141cd90eb21a630f722b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ChessPieces
-  pieceColor: 0
-  isControllable: 0
 --- !u!65 &1884239585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5639,8 +5731,22 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0782429, y: 2.4078307, z: 1.0782429}
+  m_Size: {x: 0.72, y: 2.4078307, z: 1.0782429}
   m_Center: {x: 0.00000011920928, y: 1.2039154, z: -0.0000004470349}
+--- !u!114 &1884239588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884239581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82034c43bf4ecc75a867c5465d5b6241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::chessPieces.Pieces.Queens
+  pieceColor: 0
+  isControllable: 0
 --- !u!1 &1899477770 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: dab6c0dea21994386a57acc588faa9e5, type: 3}
@@ -5665,7 +5771,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.0000016987324, y: 0.65809566, z: -0.0000012218952}
 --- !u!114 &1899477775
 MonoBehaviour:
@@ -5807,7 +5913,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.0000012218952, y: 0.65809566, z: -0.0000012218952}
 --- !u!114 &1986736084
 MonoBehaviour:
@@ -5929,7 +6035,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.000000745058, y: 0.65809566, z: -0.0000008642673}
 --- !u!114 &2017092589
 MonoBehaviour:
@@ -6117,7 +6223,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7938799, y: 1.342359, z: 0.7938799}
+  m_Size: {x: 0.87, y: 1.342359, z: 0.7938799}
   m_Center: {x: -0.000000745058, y: 0.65809566, z: -0.0000012218952}
 --- !u!114 &2100552578
 MonoBehaviour:
