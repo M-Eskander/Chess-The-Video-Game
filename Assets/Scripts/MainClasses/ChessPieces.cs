@@ -28,7 +28,7 @@ namespace MainClasses
                 }
             }
         }
-        void OnDestroy()
+        public virtual void OnDestroy()
         {
             _chessControls.Dispose();
         }

@@ -43,7 +43,6 @@ namespace Gameplay
         void Update()
         {
             HandleChoosingInput();
-            //HighlightPieceSelection();
             RotateChessBoard();
         }
         
@@ -143,6 +142,12 @@ namespace Gameplay
                     _movingPiece = true;
                 }
             }
+        }
+        public void CheckMate(ChessPieces.PieceColor whoLost)
+        {
+            Debug.Log("Checkmate!");
+            Debug.Log("Player: " + whoLost + " Lost");
+            enabled = false;
         }
     }
 }

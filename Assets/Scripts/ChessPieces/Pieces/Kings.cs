@@ -1,12 +1,18 @@
 using UnityEngine;
 using MainClasses;
-
 namespace chessPieces.Pieces
 {
     public class Kings : ChessPieces
     {
         private Vector3 _predictedPosition;
         private bool _played =  true;
+        public override void OnDestroy()
+        {
+            base.OnDestroy();
+            if (baseGameplay != null)
+                baseGameplay.CheckMate(pieceColor);
+        }
+
         public override void Update()
         {   
             base.Update();
